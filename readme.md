@@ -27,8 +27,8 @@ A powerful Discord bot that allows users to add decorative effects to their prof
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/wickstudio/discord-avatar-decoration-bot.git
-   cd discord-avatar-decoration-bot
+   git clone https://github.com/Ksa518n/Discord-Avatar-Bot.git
+   cd Discord-Avatar-Bot
    ```
 
 2. **Install dependencies**:
@@ -111,16 +111,6 @@ If you encounter issues:
 - Check that your bot token is valid
 - Verify that the required intents are enabled in the Discord Developer Portal
 
-## 🙏 Credits
-
-- Created by [Wick Studio](https://discord.gg/wicks)
-- Uses Discord.js for bot functionality
-- Uses canvas and gif-encoder-2 for image processing
-
 ## 📄 License
 
 MIT License
-
-## 🔗 Support
-
-For support, join our [Discord Server](https://discord.gg/wicks)

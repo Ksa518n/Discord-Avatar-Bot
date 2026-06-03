@@ -1,12 +1,4 @@
-/*
-██╗    ██╗██╗ ██████╗██╗  ██╗    ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗ 
-██║    ██║██║██╔════╝██║ ██╔╝    ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗
-██║ █╗ ██║██║██║     █████╔╝     ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║
-██║███╗██║██║██║     ██╔═██╗     ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║
-╚███╔███╔╝██║╚██████╗██║  ██╗    ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
- ╚══╝╚══╝ ╚═╝ ╚═════╝╚═╝  ╚═╝    ╚══════╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝ 
-Copyright (c) 2025 Wick Studio | discord.gg/wicks
-*/
+
 
 const {
   Client,
@@ -453,12 +445,12 @@ client.on("interactionCreate", async (interaction) => {
                   ? `This bot only works in ${allowedChannelIds.length} specific channels. ${allowedChannelIds.map(id => `<#${id}>`).join(", ")}`
                   : `The bot is currently disabled in all channels. Please contact a server administrator to enable it.`
               },
-              { 
+{ 
                 name: '🔗 Links', 
-                value: '[Support Server](https://discord.gg/wicks) | [GitHub](https://github.com/wickstudio/discord-avatar-decoration-bot)'
+                value: '[GitHub](https://github.com/Ksa518n/Discord-Avatar-Bot)'
               }
             ])
-            .setFooter({ text: 'Made with ❤️ by Wick Studio • ' + new Date().toLocaleDateString() });
+            .setFooter({ text: 'Avatar Decoration Bot • ' + new Date().toLocaleDateString() });
 
           await interaction.reply({ embeds: [helpEmbed] });
         } catch (helpError) {

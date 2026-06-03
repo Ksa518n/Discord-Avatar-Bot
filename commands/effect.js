@@ -52,7 +52,7 @@ const createEffectCommandEmbed = (page = 0, totalPages = 1) => {
   return new EmbedBuilder()
     .setColor("#FFDF00")
     .setTitle("✨ `Decorate Your Avatar!` ✨")
-    .setDescription("**[WickStudio](https://discord.gg/wicks) - Transform your profile picture with unique visual effects**")
+    .setDescription("**Transform your profile picture with unique visual effects**")
     .addFields([
       {
         name: "**🎭 Available Categories:**",
@@ -139,7 +139,7 @@ const createSelectMenus = (page = 0, categoryPage = {}) => {
     new ButtonBuilder()
       .setCustomId('prev_category')
       .setLabel('Previous')
-      .setEmoji('<:wick4:1244188825916280902>')
+      .setEmoji('⬅️')
       .setStyle(ButtonStyle.Primary)
       .setDisabled(Object.values(categoryPage).every(page => page === 0))
   );
@@ -148,7 +148,7 @@ const createSelectMenus = (page = 0, categoryPage = {}) => {
     new ButtonBuilder()
       .setCustomId('refresh')
       .setLabel('Refresh')
-      .setEmoji('<:wick30:1244189081827676232>')
+      .setEmoji('🔄')
       .setStyle(ButtonStyle.Secondary)
   );
   
@@ -156,7 +156,7 @@ const createSelectMenus = (page = 0, categoryPage = {}) => {
     new ButtonBuilder()
       .setCustomId('random_effect')
       .setLabel('Random')
-      .setEmoji('<:wick29:1244189085589962752>')
+      .setEmoji('🎲')
       .setStyle(ButtonStyle.Secondary)
   );
   
@@ -164,7 +164,7 @@ const createSelectMenus = (page = 0, categoryPage = {}) => {
     new ButtonBuilder()
       .setCustomId('next_category')
       .setLabel('Next')
-      .setEmoji('<:wick2:1244188791577772092>')
+      .setEmoji('➡️')
       .setStyle(ButtonStyle.Primary)
       .setDisabled(false)
   );
